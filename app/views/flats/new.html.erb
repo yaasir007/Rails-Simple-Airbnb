@@ -1,0 +1,7 @@
+<%= simple_form_for :flat do |f| %>
+  Name: <%= f.text_field :name %><br />
+  Address : <%= f.text_field :address %><br />
+  Description : <%= f.text_area :description %><br />
+  Price_per_night : <%= f.number_field :price_per_night %><br />
+  <%= f.submit %>
+<% end %>

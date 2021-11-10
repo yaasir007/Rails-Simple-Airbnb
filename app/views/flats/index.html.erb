@@ -1,0 +1,10 @@
+<h1>All our Flats (<%= @flats.count %>)</h1>
+
+<ol>
+<% @flats.each do |flat| %>
+<li>Name: <%= flat.name %>, Description: <%= flat.address %></li>
+<% end %>
+</ol>
+<br><br><br><br>
+
+<%= link_to  "Add a Flat", new_flat_path %>
