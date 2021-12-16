@@ -2,12 +2,12 @@
     <div id="header">All our Flats (<%= @flats.count %>)</div>
 </nav>
 
-<!--
+<div >
+    <%= link_to  "Add a Flat", new_flat_path %>
+</div>
+
 <ol>
-<% @flats.each do |flat| %>
-<li>Name: <%= flat.name %>, Address: <%= flat.address %></li>
+<% @flats.reverse_each do |flat| %>
+<li><%= link_to  flat.name, flat_path(flat) %> <%= link_to "Delete", flat_path(flat), method: :delete %></li>
 <% end %>
 </ol>
-
-<%= link_to  "Add a Flat", new_flat_path %>
--->

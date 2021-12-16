@@ -13,6 +13,17 @@ class FlatsController < ApplicationController
         @flats.save
     end
 
+    def show
+        @flat = Flat.find(params[:id])
+    end
+
+    def destroy
+        @flat = Flat.find(params[:id])
+        @flat.destroy
+        redirect_to flats_path
+    end
+
+
     private
 
     def params_flat

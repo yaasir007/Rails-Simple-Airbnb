@@ -1,28 +1,25 @@
-<h1 class="display-3 m-3">New Flat</h1>
+<h3 class="display-5 m-3" align="center">New Flat</h3>
 
 <div class="form-group m-5">
 <%= form_for(@flat) do |f| %>
   <%= f.label :name, class:"font-italic" %>
-  <br>
   <%= f.text_field :name, class:"form-control"%>
-  <br>
+
   <%= f.label :address, class:"font-italic"  %>
-  <br>
   <%= f.text_field :address, class:"form-control" %>
-  <br>
+
   <%= f.label :description, class:"font-italic"%>
-  <br>
   <%= f.text_field :description, class:"form-control"%>
-  <br>
+
   <%= f.label :price_per_night, class:"font-italic"%>
-  <br>
   <%= f.text_field :price_per_night, class:"form-control"%>
-  <br>
+
   <%= f.label :number_of_guests, class:"font-italic"%>
-  <br>
   <%= f.text_field :number_of_guests, class:"form-control"%>
-  <br>
-  <%= f.submit class:"btn btn-success m-2 p-3" %>
-  <%= link_to "Back", flats_path, class:"btn btn-warning m-2 p-3" %>
+
+  <div align="center">
+    <%= f.submit class:"btn btn-success m-3 p-3" %>
+    <%= link_to "Back", flats_path, class:"btn btn-warning m-3 p-3" %>
+  </div>
 <% end %>
 </div>
