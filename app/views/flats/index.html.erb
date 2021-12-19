@@ -6,10 +6,14 @@
     <%= link_to  "Add a Flat", new_flat_path %>
 </div>
 
-<div class="cards">
+<div class="container">
 <% @flats.reverse_each do |flat| %>
-    <div class="card-category">
-        <%= link_to  flat.name, flat_path(flat) %> <%= link_to "Delete", flat_path(flat), method: :delete %>
+    <div class="sub-container">
+        <%= link_to  flat.name, flat_path(flat) %>
+        <%= link_to "Delete", flat_path(flat), method: :delete %>
     </div>
 <% end %>
 </div>
+
+
+    <%# <img src="https://media.istockphoto.com/photos/spacious-apartment-with-window-wall-picture-id1289883686?b=1&k=20&m=1289883686&s=170667a&w=0&h=XumOk9s5ftoufK1dCD3PaclHpQjEU40ajIweBr4f4Tk=" /> %>

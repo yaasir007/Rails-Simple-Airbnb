@@ -11,6 +11,7 @@ class FlatsController < ApplicationController
     def create
         @flats = Flat.new(params_flat)
         @flats.save
+        redirect_to flats_path
     end
 
     def show
