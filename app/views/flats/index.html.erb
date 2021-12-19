@@ -6,8 +6,10 @@
     <%= link_to  "Add a Flat", new_flat_path %>
 </div>
 
-<ol>
+<div class="cards">
 <% @flats.reverse_each do |flat| %>
-<li><%= link_to  flat.name, flat_path(flat) %> <%= link_to "Delete", flat_path(flat), method: :delete %></li>
+    <div class="card-category">
+        <%= link_to  flat.name, flat_path(flat) %> <%= link_to "Delete", flat_path(flat), method: :delete %>
+    </div>
 <% end %>
-</ol>
+</div>
