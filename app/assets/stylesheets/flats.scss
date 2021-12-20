@@ -2,11 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
 nav {
     width: 100vw;
     height: 60px;
     background-color: bisque;
     text-align: center;
+}
+
+nav:last-of-type {
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    background-color: lightblue;
+    opacity: .7;
 }
 
 #header {
@@ -20,4 +36,7 @@ nav {
     width: 500px;
     height: 400px;
     background-color: blueviolet;
+    margin-top: 25px;
+    font-weight: bold;
+    opacity: .6;
 }

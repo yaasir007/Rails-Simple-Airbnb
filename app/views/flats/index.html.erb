@@ -2,9 +2,11 @@
     <div id="header">All our Flats (<%= @flats.count %>)</div>
 </nav>
 
-<div >
-    <%= link_to  "Add a Flat", new_flat_path %>
-</div>
+<nav>
+    <div id="header">
+        <%= link_to  "Add a Flat", new_flat_path %>
+    </div>
+</nav>
 
 <div class="container">
 <% @flats.reverse_each do |flat| %>
@@ -14,6 +16,3 @@
     </div>
 <% end %>
 </div>
-
-
-    <%# <img src="https://media.istockphoto.com/photos/spacious-apartment-with-window-wall-picture-id1289883686?b=1&k=20&m=1289883686&s=170667a&w=0&h=XumOk9s5ftoufK1dCD3PaclHpQjEU40ajIweBr4f4Tk=" /> %>
