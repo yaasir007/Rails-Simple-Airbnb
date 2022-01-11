@@ -27,3 +27,8 @@ Things you may want to cover:
 Simple Rails AirBnb App.
 
 This app has all the CRUD methods.
+
+Create
+Read
+Update
+Delete
