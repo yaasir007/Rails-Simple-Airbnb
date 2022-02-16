@@ -8,6 +8,9 @@ class FlatsController < ApplicationController
         @flat = Flat.new
     end
 
+    def showe
+    end
+
     def create
         @flats = Flat.new(params_flat)
         @flats.save
